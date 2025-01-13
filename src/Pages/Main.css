@@ -1,0 +1,30 @@
+.main {
+  position: relative;
+}
+
+.carusol-content {
+  position: absolute;
+  top: 24rem;
+  right: 24rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.carusol-content span {
+  text-transform: uppercase;
+  color: #d5a26f;
+}
+
+.story--leftalign {
+  text-align: left;
+}
+
+.story--leftalign p {
+  font-size: 1.8rem;
+  width: 75%;
+}
+
+.material--heading {
+  font-weight: 600;
+  font-size: 2rem;
+}

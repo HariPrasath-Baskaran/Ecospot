@@ -1,10 +1,14 @@
-// import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Main from "./Pages/Main";
+import TestingFile from "./TestingFile";
 
 function App() {
   return (
     <div className="App">
-      <h2>Hello Ecospot</h2>
+      {/* <Navbar />
+      <Main /> */}
+      <TestingFile />
     </div>
   );
 }
