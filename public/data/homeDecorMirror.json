@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "Type": "Bamboo Mirror",
+    "Name": "Leaf Bamboo Mirror",
+    "Rating": 4.5,
+    "Price": 450,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-1.png"
+  },
+  {
+    "id": 2,
+    "Type": "Bamboo Mirror",
+    "Name": "Round Mounted Mirror",
+    "Rating": 4.5,
+    "Price": 250,
+    "Stock": false,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-2.png"
+  },
+  {
+    "id": 3,
+    "Type": "Bamboo Mirror",
+    "Name": "Flower Art Mirror",
+    "Rating": 4.5,
+    "Price": 345,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-3.png"
+  },
+  {
+    "id": 4,
+    "Type": "Macrome Mirror",
+    "Name": "Round Hanging Mirror",
+    "Rating": 4.5,
+    "Price": 500,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-4.png"
+  },
+  {
+    "id": 5,
+    "Type": "Bamboo Mirror",
+    "Name": "Wall Mounted Mirror",
+    "Rating": 4.5,
+    "Price": 635,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-5.png"
+  },
+  {
+    "id": 6,
+    "Type": "Wax Sachet",
+    "Name": "Round Table Mirror",
+    "Rating": 4.5,
+    "Price": 235,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-6.png"
+  },
+  {
+    "id": 7,
+    "Type": "Macrome Mirror",
+    "Name": "Round Crafted Mirror",
+    "Rating": 4.5,
+    "Price": 490,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-7.png"
+  },
+  {
+    "id": 8,
+    "Type": "Wood Mirror",
+    "Name": "Oval Designed Mirror",
+    "Rating": 4.5,
+    "Price": 370,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-8.png"
+  },
+  {
+    "id": 9,
+    "Type": "Woode Mirror",
+    "Name": "Wooden Standing Mirror",
+    "Rating": 4.5,
+    "Price": 420,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-9.png"
+  },
+  {
+    "id": 10,
+    "Type": "Bamboo Mirror",
+    "Name": "Round Flower Mirror",
+    "Rating": 4.5,
+    "Price": 230,
+    "Stock": false,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-10.png"
+  },
+  {
+    "id": 11,
+    "Type": "Bamboo Mirror",
+    "Name": "Vintage Mirror",
+    "Rating": 4.5,
+    "Price": 900,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-11.png"
+  },
+  {
+    "id": 12,
+    "Type": "Bamboo Mirror",
+    "Name": "Wall Mounted Mirror",
+    "Rating": 4.5,
+    "Price": 630,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorMirror/HomeMirror-12.png"
+  }
+]
