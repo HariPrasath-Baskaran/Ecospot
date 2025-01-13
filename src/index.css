@@ -30,6 +30,10 @@ code {
   padding-top: 5rem;
 }
 
-.padding-bottom {
+.heading-padding-bottom {
   padding-bottom: 2rem;
+}
+
+.padding-bottom {
+  padding-bottom: 5rem;
 }

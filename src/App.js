@@ -6,9 +6,9 @@ import TestingFile from "./TestingFile";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar />
-      <Main /> */}
-      <TestingFile />
+      <Navbar />
+      <Main />
+      {/* <TestingFile /> */}
     </div>
   );
 }

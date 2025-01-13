@@ -1,14 +1,13 @@
 import React from "react";
-import { SellOutlinedIcon } from "../../Utils/Icons";
+import "../SpecContainer/SpecContainer.css";
+// import { SellOutlinedIcon } from "../../Utils/Icons";
 
-function SpecContainer() {
+function SpecContainer({ icon, iconSpec }) {
   return (
-    <div style={{ width: "11.5rem", height: "11.5rem" }}>
+    <div style={{ width: "20.5rem", height: "11.5rem" }}>
+      <div>{icon}</div>
       <div>
-        <SellOutlinedIcon style={{ width: "4rem", height: "4rem" }} />
-      </div>
-      <div>
-        <p style={{ fontSize: "1.2rem" }}>Hello with wholesale price</p>
+        <p style={{ fontSize: "1.2rem" }}>{iconSpec}</p>
       </div>
     </div>
   );
