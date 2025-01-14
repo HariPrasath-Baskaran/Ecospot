@@ -12,42 +12,13 @@ import {
 } from "../Utils/Icons";
 
 import "./Main.css";
+import SubNavigation from "./SubNavigation";
 
 function Main() {
   return (
     <div className="main">
       {/* DropDown Menu */}
-      <div className=" container-fluid bg-light d-flex justify-content-center">
-        <Dropdown
-          MainMenu={"All products"}
-          SubMenu={["airfreshener", "mirror", "glass"]}
-        />
-        <Dropdown
-          MainMenu={"Home Decor"}
-          SubMenu={["airfreshener", "mirror", "glass"]}
-        />
-        <Dropdown
-          MainMenu={"Daily Essentials"}
-          SubMenu={["airfreshener", "mirror", "glass"]}
-        />
-        <Dropdown
-          MainMenu={"cleaning Supplies"}
-          SubMenu={["airfreshener", "mirror", "glass"]}
-        />
-        <Dropdown
-          MainMenu={"Kitchen"}
-          SubMenu={["airfreshener", "mirror", "glass"]}
-        />
-        <Dropdown
-          MainMenu={"Makeup"}
-          SubMenu={["airfreshener", "mirror", "glass"]}
-        />{" "}
-        <Dropdown
-          MainMenu={"Gifts"}
-          SubMenu={["airfreshener", "mirror", "glass"]}
-        />
-      </div>
-
+      <SubNavigation />
       {/* Top container */}
       <div className="container-fluid p-0">
         <img
