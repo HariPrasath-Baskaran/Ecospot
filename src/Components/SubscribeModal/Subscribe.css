@@ -2,8 +2,9 @@
   width: 50rem;
   padding: 2rem 6rem;
   position: absolute;
+  top: -5rem;
+  right: 20rem;
   z-index: 1;
-  /* background-color: aliceblue; */
 }
 
 .subscribe--heading {

@@ -44,7 +44,5 @@
 }
 
 .subscribe--positioning {
-  left: 80rem;
-  top: -5rem;
   position: relative;
 }
