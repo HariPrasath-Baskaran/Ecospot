@@ -31,6 +31,7 @@
 .material--heading {
   font-weight: 600;
   font-size: 2rem;
+  align-items: center;
 }
 
 .icon--alignment {

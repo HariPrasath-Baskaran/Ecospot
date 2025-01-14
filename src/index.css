@@ -37,3 +37,7 @@ code {
 .padding-bottom {
   padding-bottom: 5rem;
 }
+
+.left-alignment {
+  text-align: left;
+}

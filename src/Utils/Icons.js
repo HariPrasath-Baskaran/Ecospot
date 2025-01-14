@@ -9,6 +9,8 @@ import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined
 import LanOutlinedIcon from "@mui/icons-material/LanOutlined";
 import SellOutlinedIcon from "@mui/icons-material/SellOutlined";
 
+import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+
 export {
   ShoppingCartOutlinedIcon,
   ShoppingBagOutlinedIcon,
@@ -19,4 +21,5 @@ export {
   LocalShippingOutlinedIcon,
   LanOutlinedIcon,
   SellOutlinedIcon,
+  FormatQuoteIcon,
 };

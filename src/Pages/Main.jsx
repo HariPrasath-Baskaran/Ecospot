@@ -2,11 +2,13 @@ import Button from "../Components/Buttons/Button";
 import Dropdown from "../Components/Dropdown/Dropdown";
 import MaterialCard from "../Components/MaterialCard/MaterialCard";
 import SpecContainer from "../Components/SpecContainer/SpecContainer";
+import Testimonial from "../Components/Testimonial/Testimonial";
 import {
   LanOutlinedIcon,
   LocalShippingOutlinedIcon,
   SellOutlinedIcon,
 } from "../Utils/Icons";
+
 import "./Main.css";
 
 function Main() {
@@ -133,12 +135,12 @@ function Main() {
 
       {/* Our Specifications */}
 
-      <div className="container-fluid padding-top bg-primary">
+      <div className="container-fluid padding-top bg-primary ">
         <div className="container text-white">
           <h3 className="heading-padding-bottom material--heading">
             5 Reason To Choose Us
           </h3>
-          <div className="row row-cols-1 row-col-md-3 g-5 justify-content-around align-items-center spec--padding">
+          <div className="row row-cols-2 row-col-md-3 g-5 justify-content-around  spec--padding">
             <SpecContainer
               icon={
                 <LocalShippingOutlinedIcon
@@ -176,8 +178,50 @@ function Main() {
       </div>
 
       {/* Customers Say */}
+
       <div className="container-fluid px-0 padding-top padding-bottom bg-altlight">
-        <div className="container  padding-top"></div>
+        <div class="d-flex flex-row mb-3 justify-content-center">
+          <div class="p-2">
+            <img
+              src="/MainPage/Testimonial-bg.png"
+              alt="testmonial-bg"
+              style={{ width: "40rem" }}
+            />
+          </div>
+
+          <div className="d-flex flex-column mb-3 align-self-start mt-2">
+            <p style={{ fontSize: "2rem", fontWeight: 600 }}>
+              What customer say about us
+            </p>
+            <div
+              class="d-flex flex-row mb-3"
+              style={{ marginLeft: "-7rem", marginTop: "4rem" }}
+            >
+              <div className="pe-3">
+                <Testimonial
+                  reviewerImg={"/MainPage/Jennifer.png"}
+                  reviewerAltText={"customer-jnnifer"}
+                  reviewerName={"Jennfer"}
+                  reviewerPlace={"chennai"}
+                  reviewContent={
+                    "Product were very nice and quality. On time delivered and good quality of packaging."
+                  }
+                />
+              </div>
+              <div className="pe-3">
+                <Testimonial
+                  reviewerImg={"/MainPage/JohnSmith.png"}
+                  reviewerAltText={"customer-johnsmith"}
+                  reviewerName={"JohnSmith"}
+                  reviewerPlace={"Coimbatore"}
+                  reviewContent={
+                    "Product were very nice and quality. On time delivered and good quality of packaging."
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

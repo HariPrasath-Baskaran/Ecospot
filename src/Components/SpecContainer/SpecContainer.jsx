@@ -1,6 +1,5 @@
 import React from "react";
 import "../SpecContainer/SpecContainer.css";
-// import { SellOutlinedIcon } from "../../Utils/Icons";
 
 function SpecContainer({ icon, iconSpec }) {
   return (
