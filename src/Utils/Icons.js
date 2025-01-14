@@ -11,6 +11,8 @@ import SellOutlinedIcon from "@mui/icons-material/SellOutlined";
 
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 export {
   ShoppingCartOutlinedIcon,
   ShoppingBagOutlinedIcon,

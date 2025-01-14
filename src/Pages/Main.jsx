@@ -2,6 +2,7 @@ import Button from "../Components/Buttons/Button";
 import Dropdown from "../Components/Dropdown/Dropdown";
 import MaterialCard from "../Components/MaterialCard/MaterialCard";
 import SpecContainer from "../Components/SpecContainer/SpecContainer";
+import Subscribe from "../Components/SubscribeModal/Subscribe";
 import Testimonial from "../Components/Testimonial/Testimonial";
 import {
   LanOutlinedIcon,
@@ -222,6 +223,10 @@ function Main() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="subscribe--positioning">
+        <Subscribe />
       </div>
     </div>
   );
