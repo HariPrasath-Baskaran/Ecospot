@@ -2,6 +2,7 @@
   width: 50rem;
   padding: 2rem 6rem;
   position: absolute;
+  z-index: 1;
   /* background-color: aliceblue; */
 }
 
