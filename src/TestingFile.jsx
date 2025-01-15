@@ -1,10 +1,11 @@
 import React from "react";
-import Footer from "./Components/Footer/Footer";
+// import Product from "./Components/ProductComp/Product";
+import ProductContainer from "./Components/ProductContainer/ProductContainer";
 
 function TestingFile() {
   return (
     <div>
-      <Footer />
+      <ProductContainer />
     </div>
   );
 }

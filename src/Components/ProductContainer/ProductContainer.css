@@ -1,0 +1,39 @@
+.product-container {
+  padding: 0 10rem !important;
+}
+
+.custom-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem !important;
+  padding: 0.6rem !important;
+  width: 100% !important;
+  text-transform: uppercase !important;
+}
+
+.product--icon {
+  font-size: 2.2rem !important;
+}
+
+.product--icon.wishlist {
+  float: right;
+}
+.product--type {
+  font-size: 1.2rem;
+}
+.product--rating {
+  font-size: 1.3rem;
+}
+
+.product--name {
+  text-align: left;
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+}
+
+.product--pricing {
+  text-align: left;
+  font-size: 1.8rem;
+  padding: 0.5rem 0 0.8rem 0;
+  font-weight: 600;
+}

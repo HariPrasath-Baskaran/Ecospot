@@ -1,6 +1,4 @@
 import Button from "../Components/Buttons/Button";
-import Dropdown from "../Components/Dropdown/Dropdown";
-
 import MaterialCard from "../Components/MaterialCard/MaterialCard";
 import SpecContainer from "../Components/SpecContainer/SpecContainer";
 import Subscribe from "../Components/SubscribeModal/Subscribe";
@@ -17,9 +15,10 @@ import SubNavigation from "./SubNavigation";
 function Main() {
   return (
     <div className="main">
-      {/* DropDown Menu */}
+      {/*###### DropDown Menu ######*/}
       <SubNavigation />
-      {/* Top container */}
+
+      {/*###### Top container ######*/}
       <div className="container-fluid p-0">
         <img
           src="/MainPage/mainimage.png"
@@ -41,7 +40,7 @@ function Main() {
         </div>
       </div>
 
-      {/* our Story */}
+      {/*###### our Story ######*/}
       <div className="container-fluid px-0 padding-top padding-bottom bg-altlight">
         <div className="container">
           <div className="row align-items-center">
@@ -78,7 +77,7 @@ function Main() {
         </div>
       </div>
 
-      {/*Browse by material  */}
+      {/*###### Browse by material ######*/}
 
       <div className="container padding-top padding-bottom">
         <h3 className="heading-padding-bottom material--heading">
@@ -106,7 +105,7 @@ function Main() {
         </div>
       </div>
 
-      {/* Our Specifications */}
+      {/*###### Our Specifications ######*/}
 
       <div className="container-fluid padding-top bg-primary ">
         <div className="container text-white">
@@ -150,7 +149,7 @@ function Main() {
         </div>
       </div>
 
-      {/* Customers Say */}
+      {/*###### Customers Say ######*/}
 
       <div className="container-fluid px-0 padding-top padding-bottom bg-altlight">
         <div class="d-flex flex-row mb-3 justify-content-center">
