@@ -7,16 +7,16 @@ import { useEffect, useState } from "react";
 function ProductDescription() {
   const location = useLocation();
 
-  console.log("loca;", location);
-  const { url, data } = location.state || {};
+  // console.log("loca;", location);
+  const { url } = location.state || {};
   const { id } = useParams();
   const [product, setProduct] = useState({});
 
-  console.log("data====", data);
+  // console.log("data====", data);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    fetch(`/data/${url}`)
+    fetch(`${url}`)
       // fetch(`/data/homeDecorAirFreshener.json`)
       .then((response) => response.json())
       .then((data) => {
@@ -26,7 +26,7 @@ function ProductDescription() {
           : console.error("product not found!");
       })
       .catch((error) => console.error("Error fetching products:", error));
-  }, [id]);
+  }, [id, url]);
 
   const {
     imgPath,

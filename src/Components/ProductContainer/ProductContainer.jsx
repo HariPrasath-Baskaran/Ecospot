@@ -12,7 +12,7 @@ function ProductContainer({ coverImage, url }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`/data/${url}`)
+    fetch(`${url}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
