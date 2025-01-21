@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import "./Dropdown.css";
 
-function Dropdown({ MainMenu, SubMenu }) {
+function Dropdown({ MainMenu, SubMenu, subLink }) {
   return (
     <>
       <nav class="navbar navbar-expand-lg bg-light text-dark">
@@ -34,11 +35,18 @@ function Dropdown({ MainMenu, SubMenu }) {
                   class="dropdown-menu dropdown-menu-light"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
-                  {SubMenu.map((separateMenu) => (
+                  {/* {SubMenu.map((separateMenu) => (
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link class="dropdown-item" to="*">
                         {separateMenu}
-                      </a>
+                      </Link>
+                    </li>
+                  ))} */}
+                  {SubMenu?.map((separateMenu, index) => (
+                    <li key={index}>
+                      <Link class="dropdown-item" to={subLink?.[index]}>
+                        {separateMenu}
+                      </Link>
                     </li>
                   ))}
                 </ul>

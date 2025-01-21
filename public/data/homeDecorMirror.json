@@ -6,7 +6,13 @@
     "Rating": 4.5,
     "Price": 450,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-1.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-01.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 2,
@@ -15,7 +21,13 @@
     "Rating": 4.5,
     "Price": 250,
     "Stock": false,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-2.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-02.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 3,
@@ -24,7 +36,13 @@
     "Rating": 4.5,
     "Price": 345,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-3.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-03.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 4,
@@ -33,7 +51,13 @@
     "Rating": 4.5,
     "Price": 500,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-4.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-04.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 5,
@@ -42,7 +66,13 @@
     "Rating": 4.5,
     "Price": 635,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-5.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-05.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 6,
@@ -51,7 +81,13 @@
     "Rating": 4.5,
     "Price": 235,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-6.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-06.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 7,
@@ -60,7 +96,13 @@
     "Rating": 4.5,
     "Price": 490,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-7.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-07.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 8,
@@ -69,7 +111,13 @@
     "Rating": 4.5,
     "Price": 370,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-8.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-08.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 9,
@@ -78,7 +126,13 @@
     "Rating": 4.5,
     "Price": 420,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-9.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-09.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 10,
@@ -87,7 +141,13 @@
     "Rating": 4.5,
     "Price": 230,
     "Stock": false,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-10.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-10.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 11,
@@ -96,7 +156,13 @@
     "Rating": 4.5,
     "Price": 900,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-11.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-11.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 12,
@@ -105,6 +171,12 @@
     "Rating": 4.5,
     "Price": 630,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorMirror/HomeMirror-12.png"
+    "imgPath": "/Images/HomeDecorMirror/Image-12.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   }
 ]
