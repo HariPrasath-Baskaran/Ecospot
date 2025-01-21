@@ -11,6 +11,9 @@ import {
   Mirror,
 } from "./Pages/SubProduct/SubProductNavigate";
 import ProductDescription from "./Components/ProductDescription/ProductDescription";
+import ContactUs from "./Components/Contactus/ContactUs";
+import Login from "./Components/Sign-In/login";
+import CreateAccount from "./Components/Sign-In/CreateAccount";
 
 function App() {
   // const location = useLocation();
@@ -32,6 +35,9 @@ function App() {
         <Route path="Mirror/:id" element={<ProductDescription />} />
         <Route path="*" element={<NoMatch />} />
         <Route path="productdes" element={<ProductDescription />} />
+        <Route path="/ContactUs" element={<ContactUs/>}/>
+        <Route path="/SignIn" element={<Login />}/>
+        <Route path="/CreateAccount" element={<CreateAccount/>}/>
       </Routes>
       <div className="footer-align">
         <Footer />

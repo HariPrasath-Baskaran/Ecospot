@@ -9,7 +9,7 @@ import {
 function Footer() {
   return (
     <>
-      <footer className="container-fluid bg-primary text-white footer-container">
+      <footer className="container-fluid bg-primary text-white footer-container  ">
         <div className="container">
           <div className="row">
             <div className="col ">

@@ -1,6 +1,5 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-
 import {
   FavoriteBorderOutlinedIcon,
   ShoppingBagOutlinedIcon,
@@ -51,7 +50,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item me-2">
-                  <NavLink to="/" className="nav-link text-white">
+                  <NavLink to="/ContactUs" className="nav-link text-white">
                     Contact Us
                   </NavLink>
                 </li>
@@ -77,9 +76,9 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item ms-2 d-none d-md-inline border-none">
-                  <a className="btn  btn-sm bg-white" href="#pricing">
+                  <NavLink to="/SignIn" className="btn  btn-sm bg-white" >
                     Sign In
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
