@@ -12,7 +12,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 3,
@@ -42,7 +44,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 20
   },
   {
     "id": 4,
@@ -57,7 +60,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 5,
@@ -72,7 +76,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 6,
@@ -87,7 +92,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 7,
@@ -102,7 +108,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 8,
@@ -117,7 +124,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 9,
@@ -132,7 +140,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 10,
@@ -147,7 +156,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 11,
@@ -162,7 +172,8 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   },
   {
     "id": 12,
@@ -177,6 +188,7 @@
     "buyPrice": 200,
     "lastMonthOrder": 500,
     "positiveRating": 80,
-    "recentOrder": 100
+    "recentOrder": 100,
+    "deliveryCharge": 40
   }
 ]
