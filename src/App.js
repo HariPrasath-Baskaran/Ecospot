@@ -13,6 +13,7 @@ import {
 import ProductDescription from "./Components/ProductDescription/ProductDescription";
 import TestingFile from "./TestingFile";
 import OrderDetailed from "./Pages/OrderDetailedPage/OrderDetailed";
+import BookingSuccess from "./Pages/BookingSuccessful/BookingSuccess";
 
 function App() {
   // const location = useLocation();
@@ -35,6 +36,7 @@ function App() {
         <Route path="*" element={<NoMatch />} />
         <Route path="productdes" element={<ProductDescription />} />
         <Route path="orderDetail" element={<OrderDetailed />} />
+        <Route path="bookingsuccess" element={<BookingSuccess />} />
       </Routes>
       <div className="footer-align">
         <Footer />

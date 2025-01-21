@@ -1,14 +1,7 @@
 import Button from "../../Components/Buttons/Button";
 import "./OrderSummary.css";
 
-export const OrderSummary = ({ product, onConfirm }) => {
-  const calculateDeliveryDate = (daysToAdd) => {
-    const today = new Date();
-    today.setDate(today.getDate() + daysToAdd);
-    return today.toDateString(); // Format: "Wed Jan 24 2025"
-  };
-
-  const deliveryDate = calculateDeliveryDate(3);
+export const OrderSummary = ({ product, onConfirm, deliveryDate }) => {
   return (
     <div className="order-summary">
       <div className="d-flex justify-content-between align-items-center border p-3 rounded">

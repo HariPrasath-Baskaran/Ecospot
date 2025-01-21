@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./OrderDetailed.css";
 import { OrderSummary } from "../OrderSummary/OrderSummary";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import PriceSummary from "./PriceSummary/PriceSummary";
 
 const OrderDetailed = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const { product } = location.state || {};
   console.log("loc:====", product);
@@ -76,6 +77,14 @@ const OrderDetailed = () => {
     }
   };
 
+  const calculateDeliveryDate = (daysToAdd) => {
+    const today = new Date();
+    today.setDate(today.getDate() + daysToAdd);
+    return today.toDateString(); // Format: "Wed Jan 24 2025"
+  };
+
+  const deliveryDate = calculateDeliveryDate(3);
+
   // const product = {
   //   image: "https://via.placeholder.com/150", // Replace with actual image URL
   //   title: "Lavender Rust",
@@ -90,12 +99,15 @@ const OrderDetailed = () => {
 
   const handleSubmitPayment = () => {
     // Simulate order confirmation
-    setShowModal(true);
+    // setShowModal(true);
     setTimeout(() => {
-      setShowModal(false);
+      // setShowModal(false);
       setOrderConfirmed(true); // Set the order as confirmed
-      alert("Order Confirmed!");
-    }, 3000); // Hide modal after 3 seconds
+      navigate(`/bookingsuccess`, {
+        state: { product: product, deliveryDate: deliveryDate },
+      });
+      // alert("Order Confirmed!");
+    }, 2000); // Hide modal after 3 seconds
   };
 
   return (
@@ -338,6 +350,7 @@ const OrderDetailed = () => {
                   <OrderSummary
                     product={product}
                     onConfirm={() => handleStepComplete(2)}
+                    deliveryDate={deliveryDate}
                   />
                 </div>
               </div>
