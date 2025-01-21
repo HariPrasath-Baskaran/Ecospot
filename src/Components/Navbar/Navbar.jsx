@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 import {
   FavoriteBorderOutlinedIcon,
@@ -37,49 +38,51 @@ function Navbar() {
             className="collapse navbar-collapse justify-content-end align-center"
             id="main-nav"
           >
-            <ul className="navbar-nav align-items-center nav--content">
-              <li className="nav-item me-2">
-                <a href="#" className="nav-link text-white">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item me-2">
-                <a href="#" className="nav-link text-white">
-                  About Us
-                </a>
-              </li>
-              <li className="nav-item me-2">
-                <a href="#" className="nav-link text-white">
-                  Contact Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <span>
-                  <ShoppingBagOutlinedIcon className="text-white me-1 " />
-                </span>
-              </li>
-              <li className="nav-item">
-                <span>
-                  <FavoriteBorderOutlinedIcon className="text-white" />
-                </span>
-              </li>
-              <li className="nav-item">
-                <span>
-                  <ShoppingCartOutlinedIcon className="text-white" />
-                </span>
-              </li>
+            <nav>
+              <ul className="navbar-nav align-items-center nav--content">
+                <li className="nav-item me-2">
+                  <NavLink to="/" className="nav-link text-white">
+                    Home
+                  </NavLink>
+                </li>
+                <li className="nav-item me-2">
+                  <NavLink to="product" className="nav-link text-white">
+                    About Us
+                  </NavLink>
+                </li>
+                <li className="nav-item me-2">
+                  <NavLink to="/" className="nav-link text-white">
+                    Contact Us
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink>
+                    <ShoppingBagOutlinedIcon className="text-white me-1 " />
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink>
+                    <FavoriteBorderOutlinedIcon className="text-white" />
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink>
+                    <ShoppingCartOutlinedIcon className="text-white" />
+                  </NavLink>
+                </li>
 
-              <li className="nav-item d-md-none">
-                <a href="#" className="nav-link text-white">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item ms-2 d-none d-md-inline border-none">
-                <a className="btn  btn-sm bg-white" href="#pricing">
-                  Sign In
-                </a>
-              </li>
-            </ul>
+                <li className="nav-item d-md-none">
+                  <a href="#" className="nav-link text-white">
+                    Pricing
+                  </a>
+                </li>
+                <li className="nav-item ms-2 d-none d-md-inline border-none">
+                  <a className="btn  btn-sm bg-white" href="#pricing">
+                    Sign In
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </nav>

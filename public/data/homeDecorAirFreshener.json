@@ -6,8 +6,13 @@
     "Rating": 4.5,
     "Price": 450,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-1.png",
-    "wishlist": true
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-01.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 2,
@@ -16,8 +21,13 @@
     "Rating": 4.5,
     "Price": 250,
     "Stock": false,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-2.png",
-    "wishlist": false
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-02.png",
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 3,
@@ -26,8 +36,13 @@
     "Rating": 4.0,
     "Price": 345,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-3.png",
-    "wishlist": false
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-03.png",
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 4,
@@ -36,8 +51,13 @@
     "Rating": 4.2,
     "Price": 635,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-4.png",
-    "wishlist": false
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-04.png",
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 5,
@@ -46,8 +66,13 @@
     "Rating": 4.5,
     "Price": 635,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-5.png",
-    "wishlist": false
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-05.png",
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 6,
@@ -56,8 +81,13 @@
     "Rating": 4.5,
     "Price": 235,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-6.png",
-    "wishlist": false
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-06.png",
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 7,
@@ -66,8 +96,13 @@
     "Rating": 4.5,
     "Price": 490,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-7.png",
-    "wishlist": true
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-07.png",
+    "wishlist": true,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 8,
@@ -76,8 +111,13 @@
     "Rating": 4.1,
     "Price": 370,
     "Stock": false,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-8.png",
-    "wishlist": false
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-08.png",
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 9,
@@ -86,8 +126,13 @@
     "Rating": 3.2,
     "Price": 420,
     "Stock": true,
-    "imgPath": "/Images/HomeDecorAirFreshener/Image-9.png",
-    "wishlist": false
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-09.png",
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 10,
@@ -97,7 +142,12 @@
     "Price": 230,
     "Stock": false,
     "imgPath": "/Images/HomeDecorAirFreshener/Image-10.png",
-    "wishlist": false
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 11,
@@ -107,7 +157,12 @@
     "Price": 900,
     "Stock": true,
     "imgPath": "/Images/HomeDecorAirFreshener/Image-11.png",
-    "wishlist": false
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   },
   {
     "id": 12,
@@ -117,6 +172,11 @@
     "Price": 630,
     "Stock": true,
     "imgPath": "/Images/HomeDecorAirFreshener/Image-12.png",
-    "wishlist": false
+    "wishlist": false,
+    "mrp": 665,
+    "buyPrice": 200,
+    "lastMonthOrder": 500,
+    "positiveRating": 80,
+    "recentOrder": 100
   }
 ]
