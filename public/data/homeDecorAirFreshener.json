@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "Type": "Reed Diffuser",
+    "Name": "French Rose",
+    "Rating": 4.5,
+    "Price": 450,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-1.png",
+    "wishlist": true
+  },
+  {
+    "id": 2,
+    "Type": "Wax Sachet",
+    "Name": "Vannila Cinnamon",
+    "Rating": 4.5,
+    "Price": 250,
+    "Stock": false,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-2.png",
+    "wishlist": false
+  },
+  {
+    "id": 3,
+    "Type": "Stick Air-Freshener",
+    "Name": "Vannila Stick Freshener",
+    "Rating": 4.0,
+    "Price": 345,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-3.png",
+    "wishlist": false
+  },
+  {
+    "id": 4,
+    "Type": "Air-Freshener",
+    "Name": "Lavender Rust",
+    "Rating": 4.2,
+    "Price": 635,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-4.png",
+    "wishlist": false
+  },
+  {
+    "id": 5,
+    "Type": "Reed Diffuser",
+    "Name": "Lemon Grass Stick",
+    "Rating": 4.5,
+    "Price": 635,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-5.png",
+    "wishlist": false
+  },
+  {
+    "id": 6,
+    "Type": "Wax Sachet",
+    "Name": "Herbs Blossom",
+    "Rating": 4.5,
+    "Price": 235,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-6.png",
+    "wishlist": false
+  },
+  {
+    "id": 7,
+    "Type": "Fruit Reed Diffuser",
+    "Name": "Green Apple Punch",
+    "Rating": 4.5,
+    "Price": 490,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-7.png",
+    "wishlist": true
+  },
+  {
+    "id": 8,
+    "Type": "Plate set",
+    "Name": "Vannila Clove",
+    "Rating": 4.1,
+    "Price": 370,
+    "Stock": false,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-8.png",
+    "wishlist": false
+  },
+  {
+    "id": 9,
+    "Type": "Fruit Air-Freshener",
+    "Name": "Citrus Blust",
+    "Rating": 3.2,
+    "Price": 420,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-9.png",
+    "wishlist": false
+  },
+  {
+    "id": 10,
+    "Type": "Wax Sachet",
+    "Name": "British Rose",
+    "Rating": 4.0,
+    "Price": 230,
+    "Stock": false,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-10.png",
+    "wishlist": false
+  },
+  {
+    "id": 11,
+    "Type": "Wax Sachet",
+    "Name": "Coffee & Bean",
+    "Rating": 4.3,
+    "Price": 900,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-11.png",
+    "wishlist": false
+  },
+  {
+    "id": 12,
+    "Type": "Wax Sachet",
+    "Name": "Herbs Vannila",
+    "Rating": 4.5,
+    "Price": 630,
+    "Stock": true,
+    "imgPath": "/Images/HomeDecorAirFreshener/Image-12.png",
+    "wishlist": false
+  }
+]
