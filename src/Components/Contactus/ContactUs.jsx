@@ -150,7 +150,7 @@ const ContactUs = () => {
       </div>
          {/* Newsletter Subscription Section    */}
          
-      <div className="row container justify-content-center aalign-items-center " style={{ marginTop:"10%",marginLeft:'250px'}}>
+      <div className="row  justify-content-center aalign-items-center " style={{ marginTop:"8%",marginBottom:'8%'}}>
         <div className="col-12 col-sm-12 col-md-8 col-lg-6">
           <div className="card shadow-lg p-4 bg-white">
             <h3 className="text-center mb-3">
