@@ -156,9 +156,10 @@ const CreateAccount = () => {
   };
 
   return (
+    <div className="container-fluid">
     <div
-      className="container-fluid d-flex justify-content-center align-items-center md-5  "
-      style={{ minHeight: "80vh" , minWidth:'100%'}}
+      className="d-flex justify-content-center align-items-center md-5  "
+      style={{  minHeight: "80vh" , minWidth:'100%'}}
     >
       <div className="card m-5 p-5 ">
         <div className="justify-content-center align-items-center mb-4 word-wrap">
@@ -296,6 +297,7 @@ const CreateAccount = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };

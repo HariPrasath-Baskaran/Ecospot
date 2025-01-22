@@ -35,7 +35,7 @@ const ContactUs = () => {
       
         {/* Img div */}
         <div>
-      <div className=" imagefield bg-image-full d-flex col-sm-12  justify-content-center align-items-center vh-100 w-100">
+      <div className=" container-fluid-inner imagefield bg-image-full d-flex col-sm-12  justify-content-center align-items-center vh-100 w-100">
         <img
           src="/CoverImage/contactus.png"
           style={{ backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
@@ -49,10 +49,10 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="" style={{ minWidth: "100vh", minHeightHeight: "100vh" }}>
+      <div className="" style={{ Width: "", minHeightHeight: "80vh" }}>
         <div
           className="row d-flex  align-items-strech justify-content-center position-relative "
-          style={{ left:'12%', top:'-100px', width:'80%'}}
+          style={{width: '50%', marginTop: '-100px', left:'350px'}}
         >
           {/* Contact Form Section */}
           <div className="col-md-8  m-0 p-0 ">
@@ -150,7 +150,7 @@ const ContactUs = () => {
       </div>
          {/* Newsletter Subscription Section    */}
          
-      <div className="row container justify-content-center aalign-items-center " style={{ marginLeft:"0%"}}>
+      <div className="row container justify-content-center aalign-items-center " style={{ marginTop:"10%",marginLeft:'250px'}}>
         <div className="col-12 col-sm-12 col-md-8 col-lg-6">
           <div className="card shadow-lg p-4 bg-white">
             <h3 className="text-center mb-3">

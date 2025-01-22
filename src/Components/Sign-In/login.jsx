@@ -52,12 +52,12 @@ const Login = () => {
 
   return (
      
-    <div className=' wrapper container-fluid d-flex align-items-center justify-content-center position-relative  w-100' style={{minwidth:'50%' , height:'80vh'}}>
+    <div className=' wrapper container-fluid d-flex align-items-center justify-content-center position-relative  w-100' style={{minWidth:'70%' , height:'80vh'}}>
        
        <Link to="/" ><ArrowBackOutlinedIcon  className='icon position-relative ' style={{top:'-200px', left:'0px',  }} /></Link>
-      <div className="row w-100 justify-content-center " style={{maxWidth: "100%"}}>
+      <div className="row w-100 justify-content-center " style={{maxWidth: "50%"}}>
       
-      <div className='col-md-4 col-sm-12  d-flex p-4  '>
+      <div className='col-md-5 col-sm-12  d-flex p-4  '>
               <div 
               className='w-100'
                style={{ minwidth: "100%" }}>
@@ -68,7 +68,7 @@ const Login = () => {
               </div>
 
 
-            <div className=" col-md-7  d-flex flex-column align-items-stretch mb-3 p-5 " >
+            <div className=" col-md-7  d-flex flex-column align-items-stretch mb-3 p-5 " style={{width:"50%"}}>
                 <div className=' ' >
                 <p className=' h2 fw-bold mb-2 '>
                   Welcome to Ecospot,

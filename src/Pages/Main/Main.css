@@ -49,3 +49,11 @@
 /* .wrapper{
   text-align: start;
 } */
+
+.container-fluid {
+  overflow-x: hidden;  /* Prevents horizontal scrolling */
+}
+
+body {
+  overflow-x: hidden;
+}
