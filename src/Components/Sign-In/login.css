@@ -13,7 +13,10 @@
     display: none !important;
   }
 }
-.img-fluid{
+.img-fluid {
   margin: 0px 0px 0px 0px;
-  
+}
+
+.form-alignment {
+  text-align: left;
 }

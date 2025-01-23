@@ -50,7 +50,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item me-2">
-                  <NavLink to="product" className="nav-link text-white">
+                  <NavLink to="/ContactUs" className="nav-link text-white">
                     Contact Us
                   </NavLink>
                 </li>

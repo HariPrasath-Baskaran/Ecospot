@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import {
   Person2OutlinedIcon,
   MailOutlineOutlinedIcon,
   RemoveRedEyeOutlinedIcon,
   VisibilityOffOutlinedIcon,
-
 } from "../../Utils/Icons";
 import "./CreateAccount.css";
 
@@ -20,7 +19,6 @@ const CreateAccount = () => {
     agreeTerms: false,
   });
   const [showSuccess, setShowSuccess] = useState(false);
-
 
   // State for storing all registered users
   const [registeredUsers, setRegisteredUsers] = useState([]);
@@ -46,11 +44,10 @@ const CreateAccount = () => {
     if (showSuccess) {
       const timer = setTimeout(() => {
         setShowSuccess(false);
-      }, 1000);   
+      }, 1000);
       return () => clearTimeout(timer);
     }
   }, [showSuccess]);
-  
 
   // Handle input changes for all form fields
   const handleInputChange = (e) => {
@@ -137,9 +134,9 @@ const CreateAccount = () => {
         agreeTerms: false,
       });
 
-      // Show success message 
+      // Show success message
       alert("Account created successfully!");
-      window.location.href = '/';
+      window.location.href = "/";
     }
   };
 
@@ -153,147 +150,156 @@ const CreateAccount = () => {
 
   return (
     <div className="container-fluid">
-    <div
-      className="d-flex justify-content-center align-items-center md-5  "
-      style={{  minHeight: "80vh" , minWidth:'100%'}}
-    >
-      <div className="card m-5 p-5 ">
-        <div className="justify-content-center align-items-center mb-4 word-wrap">
-          <p className="h1">CREATE AN ACCOUNT</p>
+      <div
+        className="d-flex justify-content-center align-items-center md-5  "
+        style={{ minHeight: "80vh", minWidth: "100%" }}
+      >
+        <div className="card m-5 p-5 ">
+          <div className="justify-content-center align-items-center mb-4 word-wrap">
+            <p className="h1">CREATE AN ACCOUNT</p>
+          </div>
+          {showSuccess && (
+            <div className="alert alert-success" role="alert">
+              Account created successfully!
+            </div>
+          )}
+          <form className="w-100" onSubmit={handleSubmit}>
+            <div className="form-group mb-5">
+              {/* Name Input */}
+              <div className="position-relative">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  className={`form-control mb-5 p-3 border ${
+                    errors.name ? "border-danger" : "border-dark"
+                  }`}
+                />
+
+                {errors.name && (
+                  <small className="text-danger">{errors.name}</small>
+                )}
+              </div>
+
+              {/* Email Input */}
+              <div className="position-relative">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email "
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className={`form-control mb-5 p-3 border ${
+                    errors.email ? "border-danger" : "border-dark"
+                  }`}
+                />
+
+                {errors.email && (
+                  <small className="text-danger">{errors.email}</small>
+                )}
+              </div>
+
+              {/* Password Input */}
+              <div className="position-relative">
+                <input
+                  type={showPassword.password ? "text" : "password"}
+                  name="password"
+                  placeholder="Password"
+                  value={formData.password}
+                  onChange={handleInputChange}
+                  className={`form-control mb-5 p-3 border ${
+                    errors.password ? "border-danger" : "border-dark"
+                  }`}
+                />
+                <RemoveRedEyeOutlinedIcon
+                  icon={
+                    showPassword.password
+                      ? RemoveRedEyeOutlinedIcon
+                      : VisibilityOffOutlinedIcon
+                  }
+                  className="position-absolute"
+                  style={{ top: "10px", right: "10px", cursor: "pointer" }}
+                  onClick={() => togglePasswordVisibility("password")}
+                />
+                {errors.password && (
+                  <small className="text-danger">{errors.password}</small>
+                )}
+              </div>
+
+              {/* Repeat Password Input */}
+              <div className="position-relative">
+                <input
+                  type={showPassword.rePassword ? "text" : "password"}
+                  name="rePassword"
+                  placeholder="Repeat Password"
+                  value={formData.rePassword}
+                  onChange={handleInputChange}
+                  className={`form-control mb-5 p-3 border ${
+                    errors.rePassword ? "border-danger" : "border-dark"
+                  }`}
+                />
+                <VisibilityOffOutlinedIcon
+                  icon={
+                    showPassword.rePassword
+                      ? VisibilityOffOutlinedIcon
+                      : RemoveRedEyeOutlinedIcon
+                  }
+                  className="position-absolute"
+                  style={{ top: "10px", right: "10px", cursor: "pointer" }}
+                  onClick={() => togglePasswordVisibility("rePassword")}
+                />
+                {errors.rePassword && (
+                  <small className="text-danger">{errors.rePassword}</small>
+                )}
+              </div>
+
+              {/* Terms Agreement Checkbox */}
+              <div className="position-relative mb-3">
+                <input
+                  type="checkbox"
+                  name="agreeTerms"
+                  checked={formData.agreeTerms}
+                  onChange={handleInputChange}
+                  className="form-check-input position-absolute"
+                />
+                <label
+                  className="form-check-label position-relative"
+                  style={{ left: "2rem" }}
+                >
+                  I agree to the terms and conditions
+                </label>
+                {errors.agreeTerms && (
+                  <small className="text-danger d-block">
+                    {errors.agreeTerms}
+                  </small>
+                )}
+              </div>
+            </div>
+
+            {/* Submit Button */}
+            <div className="d-grid gap-2 mb-5">
+              <button type="submit" className="btn btn-warning mt-3">
+                REGISTER
+              </button>
+            </div>
+
+            {/* Login Link */}
+            <div className="text-center">
+              <p>
+                Have already an Account?{" "}
+                <Link
+                  to="/SignIn"
+                  className="link-primary text-decoration-underline"
+                >
+                  Login here
+                </Link>
+              </p>
+            </div>
+          </form>
         </div>
-        {showSuccess && (
-        <div className="alert alert-success" role="alert">
-          Account created successfully!
-        </div>
-      )}
-        <form className="w-100" onSubmit={handleSubmit}>
-          <div className="form-group mb-5">
-            {/* Name Input */}
-            <div className="position-relative">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleInputChange}
-                className={`form-control mb-5 p-3 border ${
-                  errors.name ? "border-danger" : "border-dark"
-                }`}
-              />
-
-              
-             
-              {errors.name && (
-                <small className="text-danger">{errors.name}</small>
-              )}
-            </div>
-
-            {/* Email Input */}
-            <div className="position-relative">
-              <input
-                type="text"
-                name="email"
-                placeholder="Email "
-                value={formData.email}
-                onChange={handleInputChange}
-                className={`form-control mb-5 p-3 border ${
-                  errors.email ? "border-danger" : "border-dark"
-                }`}
-              />
-             
-              {errors.email && (
-                <small className="text-danger">{errors.email}</small>
-              )}
-            </div>
-
-            {/* Password Input */}
-            <div className="position-relative">
-              <input
-                type={showPassword.password ? "text" : "password"}
-                name="password"
-                placeholder="Password"
-                value={formData.password}
-                onChange={handleInputChange}
-                className={`form-control mb-5 p-3 border ${
-                  errors.password ? "border-danger" : "border-dark"
-                }`}
-              />
-              <RemoveRedEyeOutlinedIcon
-                icon={showPassword.password ? RemoveRedEyeOutlinedIcon : VisibilityOffOutlinedIcon}
-                className="position-absolute"
-                style={{ top: "10px", right: "10px", cursor: "pointer" }}
-                onClick={() => togglePasswordVisibility("password")}
-              />
-              {errors.password && (
-                <small className="text-danger">{errors.password}</small>
-              )}
-            </div>
-
-            {/* Repeat Password Input */}
-            <div className="position-relative">
-              <input
-                type={showPassword.rePassword ? "text" : "password"}
-                name="rePassword"
-                placeholder="Repeat Password"
-                value={formData.rePassword}
-                onChange={handleInputChange}
-                className={`form-control mb-5 p-3 border ${
-                  errors.rePassword ? "border-danger" : "border-dark"
-                }`}
-              />
-              <VisibilityOffOutlinedIcon
-                icon={showPassword.rePassword ? VisibilityOffOutlinedIcon : RemoveRedEyeOutlinedIcon}
-                className="position-absolute"
-                style={{ top: "10px", right: "10px", cursor: "pointer" }}
-                onClick={() => togglePasswordVisibility("rePassword")}
-              />
-              {errors.rePassword && (
-                <small className="text-danger">{errors.rePassword}</small>
-              )}
-            </div>
-
-            {/* Terms Agreement Checkbox */}
-            <div className="position-relative mb-3">
-              <input
-                type="checkbox"
-                name="agreeTerms"
-                checked={formData.agreeTerms}
-                onChange={handleInputChange}
-                className="form-check-input position-absolute"
-              />
-              <label
-                className="form-check-label position-relative"
-                style={{ left: "2rem" }}
-              >
-                I agree to the terms and conditions
-              </label>
-              {errors.agreeTerms && (
-                <small className="text-danger d-block">
-                  {errors.agreeTerms}
-                </small>
-              )}
-            </div>
-          </div>
-
-          {/* Submit Button */}
-          <div className="d-grid gap-2 mb-5">
-            <button type="submit" className="btn btn-warning mt-3">
-              REGISTER
-            </button>
-          </div>
-
-          {/* Login Link */}
-          <div className="text-center">
-            <p>
-              Have already an Account?
-              <Link to="/SignIn" className="link-primary text-decoration-underline">
-                Login here
-              </Link>
-            </p>
-          </div>
-        </form>
       </div>
-    </div>
     </div>
   );
 };

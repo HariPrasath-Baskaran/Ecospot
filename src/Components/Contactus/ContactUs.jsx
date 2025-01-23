@@ -47,7 +47,10 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="" style={{ Width: "", minHeightHeight: "80vh" }}>
+          <div
+            className="form-alignment"
+            style={{ Width: "", minHeightHeight: "80vh" }}
+          >
             <div
               className="row d-flex  align-items-strech justify-content-center position-relative "
               style={{ width: "50%", marginTop: "-80px", left: "350px" }}
