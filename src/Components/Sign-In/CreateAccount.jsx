@@ -46,8 +46,7 @@ const CreateAccount = () => {
     if (showSuccess) {
       const timer = setTimeout(() => {
         setShowSuccess(false);
-      }, 3000); // Hide after 3 seconds
-  
+      }, 1000);   
       return () => clearTimeout(timer);
     }
   }, [showSuccess]);
@@ -74,7 +73,6 @@ const CreateAccount = () => {
   const validateForm = () => {
     const newErrors = {};
 
-    // Name validation
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
     }
@@ -87,19 +85,16 @@ const CreateAccount = () => {
       newErrors.email = "Please enter a valid email";
     }
 
-    // Password validation
     if (!formData.password) {
       newErrors.password = "Password is required";
     } else if (formData.password.length < 6) {
       newErrors.password = "Password must be at least 6 characters";
     }
 
-    // Confirm password validation
     if (formData.password !== formData.rePassword) {
       newErrors.rePassword = "Passwords do not match";
     }
 
-    // Terms agreement validation
     if (!formData.agreeTerms) {
       newErrors.agreeTerms = "You must agree to the terms and conditions";
     }
@@ -144,6 +139,7 @@ const CreateAccount = () => {
 
       // Show success message 
       alert("Account created successfully!");
+      window.location.href = '/';
     }
   };
 
@@ -224,7 +220,7 @@ const CreateAccount = () => {
               />
               <RemoveRedEyeOutlinedIcon
                 icon={showPassword.password ? RemoveRedEyeOutlinedIcon : VisibilityOffOutlinedIcon}
-                className="icon position-absolute"
+                className="position-absolute"
                 style={{ top: "10px", right: "10px", cursor: "pointer" }}
                 onClick={() => togglePasswordVisibility("password")}
               />
@@ -247,7 +243,7 @@ const CreateAccount = () => {
               />
               <VisibilityOffOutlinedIcon
                 icon={showPassword.rePassword ? VisibilityOffOutlinedIcon : RemoveRedEyeOutlinedIcon}
-                className="icon position-absolute"
+                className="position-absolute"
                 style={{ top: "10px", right: "10px", cursor: "pointer" }}
                 onClick={() => togglePasswordVisibility("rePassword")}
               />

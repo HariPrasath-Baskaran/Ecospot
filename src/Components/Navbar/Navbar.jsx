@@ -45,7 +45,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item me-2">
-                  <NavLink to="product" className="nav-link text-white">
+                  <NavLink to="/Shoppingcart" className="nav-link text-white">
                     About Us
                   </NavLink>
                 </li>

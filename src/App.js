@@ -14,6 +14,7 @@ import ProductDescription from "./Components/ProductDescription/ProductDescripti
 import ContactUs from "./Components/Contactus/ContactUs";
 import Login from "./Components/Sign-In/login";
 import CreateAccount from "./Components/Sign-In/CreateAccount";
+import ShoppingCart from "./Components/ShoppingCart/ShoppingCart";
 
 function App() {
   // const location = useLocation();
@@ -38,6 +39,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs/>}/>
         <Route path="/SignIn" element={<Login />}/>
         <Route path="/CreateAccount" element={<CreateAccount/>}/>
+        <Route path="Shoppingcart" element={<ShoppingCart/>}/>
       </Routes>
       <div className="footer-align">
         <Footer />

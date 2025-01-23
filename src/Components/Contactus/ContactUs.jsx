@@ -25,8 +25,9 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("contactForm", JSON.stringify(formData));
+    alert("Message sent successfully!");
   };
-  // alert("Message sent successfully!");
+  
 
   return (
 
@@ -150,8 +151,8 @@ const ContactUs = () => {
       </div>
          {/* Newsletter Subscription Section    */}
          
-      <div className="row  justify-content-center aalign-items-center " style={{ marginTop:"8%",marginBottom:'8%'}}>
-        <div className="col-12 col-sm-12 col-md-8 col-lg-6">
+      <div className="row  justify-content-center aalign-items-center " style={{ marginTop:"10%",marginBottom:'10%'}}>
+        <div className="col-6 col-sm-12 col-md-8 col-lg-6">
           <div className="card shadow-lg p-4 bg-white">
             <h3 className="text-center mb-3">
               Subscribe To Our Newsletter for New Product Insights
@@ -164,9 +165,9 @@ const ContactUs = () => {
               <div className="d-flex flex-column flex-md-row gap-2">
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control mb-3"
                   placeholder="Enter your email address"
-                  required
+                  
                 />
                 <button
                   type="submit"
