@@ -50,17 +50,17 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item me-2">
-                  <NavLink to="/ContactUs" className="nav-link text-white">
+                  <NavLink to="product" className="nav-link text-white">
                     Contact Us
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink>
+                  <NavLink to="/Shoppingcart">
                     <ShoppingBagOutlinedIcon className="text-white me-1 " />
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink>
+                  <NavLink to="/Whislist">
                     <FavoriteBorderOutlinedIcon className="text-white" />
                   </NavLink>
                 </li>
@@ -76,7 +76,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item ms-2 d-none d-md-inline border-none">
-                  <NavLink to="/SignIn" className="btn  btn-sm bg-white" >
+                  <NavLink to="/SignIn" className="btn  btn-sm bg-white">
                     Sign In
                   </NavLink>
                 </li>

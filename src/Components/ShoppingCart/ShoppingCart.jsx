@@ -56,16 +56,16 @@ const ShoppingCart = () => {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card">
+          <div className="card p-4">
             <div className="card-body ">
               <div className="d-flex align-items-center mb-3">
-                <span className="text-success">
+                <span className="text-success h3 mb-3">
                   this item Eligibility for checkout
                 </span>
               </div>
-              <div className="d-flex justify-content-between">
-                <span className="">Subtotal</span>
-                <span className="">$450.99</span>
+              <div className="d-flex justify-content-between mb-3">
+                <span className="h2">Subtotal items 2  </span>
+                <span className="h2">$ 450</span>
               </div>
               <button
                 className="btn btn-light w-100"

@@ -10,44 +10,37 @@ import { Link } from "react-router-dom";
 const Login = () => {
 
   const [formData, setFormData] = useState({
-    email: '',
-    password: ''
+    email: "",
+    password: "",
   });
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
-  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevData => ({
+    setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
-  
-    if (error) setError('');
-  };
-   
-   const handleLogin = (e) => {
-    e.preventDefault();
-    
 
-    const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
-    
-   
+    if (error) setError("");
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
+
     const user = registeredUsers.find(
-      user => user.email === formData.email && user.password === formData.password
+      (user) => user.email === formData.email && user.password === formData.password
     );
 
     if (user) {
-      
-      localStorage.setItem('currentUser', JSON.stringify(user));
-     
-      window.location.href = '/Home';
+      localStorage.setItem("currentUser", JSON.stringify(user));
+      window.location.href = "/Home";
     } else {
-      setError('Invalid email or password');
+      setError("Invalid email or password");
     }
   };
-
-
 
 
   return (
@@ -116,6 +109,11 @@ const Login = () => {
                 className='link-primary text-decoration-underline justify-content-center align-items-center'> Forgot  your password? </Link> 
                 </p>
               </div>
+              {error && (
+              <div className="alert text-danger mt-3" role="alert">
+                {error}
+              </div>
+            )}
               <div className='d-grid gap-2  mt-5'>
               <button className='btn btn-success  '>
                 Sign-In
