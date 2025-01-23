@@ -1,4 +1,4 @@
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { CheckCircleIcon, StarOutlinedIcon } from "../../Utils/Icons";
 import Button from "../Buttons/Button";
 import "./ProductDescription.css";
@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 function ProductDescription() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   // console.log("loca;", location);
   const { url } = location.state || {};
@@ -40,6 +41,10 @@ function ProductDescription() {
     mrp,
     buyPrice,
   } = product;
+
+  const clickHandler = () => {
+    navigate(`/orderDetail`, { state: { product: product } });
+  };
 
   return (
     <div className="container main-container">
@@ -157,6 +162,7 @@ function ProductDescription() {
                   <Button
                     label={"Buy Now"}
                     addOnClasses={"btn-primary text-white btnStyle"}
+                    eventHandler={() => clickHandler()}
                   />
                 </>
               ) : (

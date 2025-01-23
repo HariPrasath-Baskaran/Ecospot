@@ -16,6 +16,10 @@ import Login from "./Components/Sign-In/login";
 import CreateAccount from "./Components/Sign-In/CreateAccount";
 import ShoppingCart from "./Components/ShoppingCart/ShoppingCart";
 import Whislist from "./Whislist/Whislist";
+import TestingFile from "./TestingFile";
+import OrderDetailed from "./Pages/OrderDetailedPage/OrderDetailed";
+import BookingSuccess from "./Pages/BookingSuccessful/BookingSuccess";
+
 
 function App() {
   // const location = useLocation();
@@ -42,6 +46,8 @@ function App() {
         <Route path="/CreateAccount" element={<CreateAccount/>}/>
         <Route path="/Shoppingcart" element={<ShoppingCart/>}/>
         <Route path="/Whislist" element={<Whislist />}/>
+        <Route path="orderDetail" element={<OrderDetailed />} />
+        <Route path="bookingsuccess" element={<BookingSuccess />} />
       </Routes>
       <div className="footer-align">
         <Footer />
@@ -53,6 +59,7 @@ function App() {
         <Route path="/airfreshener" element={<TestingFile />} />
         <Route path="/airfreshener/:id" element={<Testfile />} />
       </Routes> */}
+      {/* <TestingFile /> */}
     </div>
   );
 }
