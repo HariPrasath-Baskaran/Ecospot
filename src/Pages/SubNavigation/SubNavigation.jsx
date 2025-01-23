@@ -5,7 +5,7 @@ function SubNavigation() {
     <>
       <div
         className=" container-fluid bg-light d-flex justify-content-center position-sticky"
-        style={{ top: "54px", zIndex: 1, marginBottom: "0.5rem" }}
+        style={{ top: "54px", zIndex: 10, marginBottom: "0.5rem" }}
       >
         <Dropdown
           MainMenu={"All products"}
