@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Accordian from "./Pages/OrderDetailedPage/OrderDetailed";
+import Order from "./Pages/Order/Order";
 
 function TestingFile() {
   // useEffect(() => {
@@ -16,11 +17,7 @@ function TestingFile() {
   //   console.log("id;", id);
   //   navigate(`/airfreshener/${id}`);
   // };
-  return (
-    <div className="contianer mt-5 px-4">
-      <Accordian />
-    </div>
-  );
+  return <div className="contianer mt-5 px-4">{/* <Order /> */}</div>;
 }
 
 export default TestingFile;

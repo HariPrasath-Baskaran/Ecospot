@@ -16,10 +16,9 @@ import Login from "./Components/Sign-In/login";
 import CreateAccount from "./Components/Sign-In/CreateAccount";
 import ShoppingCart from "./Components/ShoppingCart/ShoppingCart";
 import Whislist from "./Whislist/Whislist";
-import TestingFile from "./TestingFile";
 import OrderDetailed from "./Pages/OrderDetailedPage/OrderDetailed";
 import BookingSuccess from "./Pages/BookingSuccessful/BookingSuccess";
-
+import Orders from "./Pages/Orders/Orders";
 
 function App() {
   // const location = useLocation();
@@ -41,13 +40,14 @@ function App() {
         <Route path="Mirror/:id" element={<ProductDescription />} />
         <Route path="*" element={<NoMatch />} />
         <Route path="productdes" element={<ProductDescription />} />
-        <Route path="/ContactUs" element={<ContactUs/>}/>
-        <Route path="/SignIn" element={<Login />}/>
-        <Route path="/CreateAccount" element={<CreateAccount/>}/>
-        <Route path="/Shoppingcart" element={<ShoppingCart/>}/>
-        <Route path="/Whislist" element={<Whislist />}/>
+        <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/SignIn" element={<Login />} />
+        <Route path="/CreateAccount" element={<CreateAccount />} />
+        <Route path="/Shoppingcart" element={<ShoppingCart />} />
+        <Route path="/Whislist" element={<Whislist />} />
         <Route path="orderDetail" element={<OrderDetailed />} />
         <Route path="bookingsuccess" element={<BookingSuccess />} />
+        <Route path="orders" element={<Orders />} />
       </Routes>
       <div className="footer-align">
         <Footer />
