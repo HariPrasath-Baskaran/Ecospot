@@ -99,6 +99,7 @@ const OrderDetailed = () => {
   };
 
   const handleSubmitPayment = () => {
+    // product update in orders page
     const orderData = {
       product: product,
       selectedAddress: selectedAddress,
@@ -106,6 +107,7 @@ const OrderDetailed = () => {
       deliveryDate: deliveryDate,
     };
 
+    // axios method to update the orders
     axios
       .post(
         "https://679502dfaad755a134eafb70.mockapi.io/Project/orders",

@@ -2,10 +2,10 @@
   padding: 0 10rem !important;
 }
 
-.custom-link {
+.custom-button {
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.6rem !important;
+  font-weight: 500 !important;
+  font-size: 1.4rem !important;
   padding: 0.6rem !important;
   width: 100% !important;
   text-transform: uppercase !important;
@@ -17,6 +17,7 @@
 
 .product--icon.wishlist {
   float: right;
+  margin-bottom: 0.5rem;
 }
 .product--type {
   font-size: 1.2rem;
@@ -29,6 +30,7 @@
   text-align: left;
   font-size: 1.6rem;
   padding-top: 0.5rem;
+  /* color: rgba(16, 16, 16, 0.51) !important; */
 }
 
 .product--pricing {

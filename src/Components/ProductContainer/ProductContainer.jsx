@@ -56,60 +56,58 @@ function ProductContainer({ coverImage, url }) {
                 <div
                   className=" col col-md-4 card mt-5"
                   style={{ width: "30rem", padding: "2rem 2.4rem" }}
-                  onClick={() => {
-                    handleProductClick(productData.id, productData.imgPath);
-                    // console.log(productData.id);
-                  }}
                 >
-                  <p className="card-text">
+                  <div
+                    // className="mb-2"
+                    onClick={() => {
+                      handleProductClick(productData.id, productData.imgPath);
+                      // console.log(productData.id);
+                    }}
+                  >
+                    {/* <p className="card-text"> */}
                     <FavoriteBorderOutlinedIcon className="product--icon wishlist" />
-                  </p>
-                  <img
-                    src={productData.imgPath}
-                    className="card-img-top"
-                    alt="test"
-                  />
+                    {/* </p> */}
+                    <img
+                      src={productData.imgPath}
+                      className="card-img-top"
+                      alt="test"
+                    />
 
-                  <div className="card-body">
-                    <div className="d-flex flex-row justify-content-between">
-                      <div>
-                        <p className="card-text product--type text-lighttext">
-                          {productData.Type}
-                        </p>
-                      </div>
-                      <div className="d-flex flex-row align-items-center">
+                    <div className="card-body">
+                      <div className="d-flex flex-row justify-content-between">
                         <div>
-                          <p className="product--rating card-text">
-                            {productData.Rating}
+                          <p className="card-text product--type text-lighttext">
+                            {productData.Type}
                           </p>
                         </div>
-                        <div>
-                          <StarOutlinedIcon className="product--icon" />
+                        <div className="d-flex flex-row align-items-center">
+                          <div>
+                            <p className="product--rating card-text">
+                              {productData.Rating}
+                            </p>
+                          </div>
+                          <div>
+                            <StarOutlinedIcon className="product--icon" />
+                          </div>
                         </div>
                       </div>
+                      <h5 className="card-title product--name text-textcolor">
+                        {productData.Name}
+                      </h5>
+                      <h5 className="card-title product--pricing text-secondary">
+                        ${productData.Price}
+                      </h5>
                     </div>
-                    <h5 className="card-title product--name text-textcolor">
-                      {productData.Name}
-                    </h5>
-                    <h5 className="card-title product--pricing text-secondary">
-                      ${productData.Price}
-                    </h5>
-                    {productData.Stock ? (
-                      <a
-                        href="#"
-                        className="btn btn-primary custom-link text-white"
-                      >
-                        add to cart
-                      </a>
-                    ) : (
-                      <a
-                        href="#"
-                        className="btn btn-primary  disabled custom-link text-white"
-                      >
-                        out of stock
-                      </a>
-                    )}
                   </div>
+                  {productData.Stock ? (
+                    <button className="btn btn-primary custom-button text-white">
+                      add to cart
+                    </button>
+                  ) : (
+                    <button className="btn btn-primary disabled custom-button text-white">
+                      out of stock
+                    </button>
+                  )}
                 </div>
               ))}
             </div>
