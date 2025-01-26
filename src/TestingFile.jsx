@@ -1,4 +1,5 @@
 import React from "react";
+import CartPage from "./Pages/Cart/Cart";
 
 function TestingFile() {
   // useEffect(() => {
@@ -14,7 +15,11 @@ function TestingFile() {
   //   console.log("id;", id);
   //   navigate(`/airfreshener/${id}`);
   // };
-  return <div className="contianer mt-5 px-4">{/* <Order /> */}</div>;
+  return (
+    <div className="contianer mt-5 px-4">
+      <CartPage />
+    </div>
+  );
 }
 
 export default TestingFile;

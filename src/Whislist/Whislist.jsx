@@ -33,11 +33,12 @@ const Whislist = () => {
                     </p>
 
                     <div className=" d-flex align-items-center gap-3">
-                      
                       <button className="btn fw-bold text-danger btn-light">
                         Remove
                       </button>
-                      <button className="fw-bold btn btn-light">Add to card</button>
+                      <button className="fw-bold btn btn-light">
+                        Add to card
+                      </button>
                       <button className=" fw-bold btn btn-light">Share</button>
                     </div>
                   </div>

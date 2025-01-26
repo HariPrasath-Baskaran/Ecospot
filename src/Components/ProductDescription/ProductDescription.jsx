@@ -4,6 +4,7 @@ import Button from "../Buttons/Button";
 import "./ProductDescription.css";
 import { useEffect, useState } from "react";
 import Loader from "../Loader/Loader";
+import axios from "axios";
 
 function ProductDescription() {
   const location = useLocation();
@@ -48,6 +49,19 @@ function ProductDescription() {
 
   const clickHandler = () => {
     navigate(`/orderDetail`, { state: { product: product } });
+  };
+
+  const cartHandler = () => {
+    // console.log("add to cart button clicked");
+
+    axios
+      .post("https://679502dfaad755a134eafb70.mockapi.io/Project/cart", product)
+      .then((response) => {
+        console.log("Order submitted successfully:", response.data);
+      })
+      .catch((error) => {
+        console.error("Error in adding cart:", error);
+      });
   };
 
   return (
@@ -170,6 +184,7 @@ function ProductDescription() {
                       <Button
                         label={"Add to Cart"}
                         addOnClasses={"btn-outline-primary btnStyle"}
+                        eventHandler={() => cartHandler()}
                       />
                       <Button
                         label={"Buy Now"}

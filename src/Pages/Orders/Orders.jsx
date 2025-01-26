@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "./Orders.css";
 
 function Orders() {
   const [order, setOrder] = useState([]);
@@ -13,8 +14,8 @@ function Orders() {
       .catch((err) => console.log(err));
   });
   return (
-    <div className="container bookingsuccess-container">
-      <div className="alert alert-success bookingsuccess--heading" role="alert">
+    <div className="container orders-container">
+      <div className="alert alert-success orders--heading" role="alert">
         Orders
       </div>
       <div className="card shadow-lg p-3 mb-5 bg-white rounded">
@@ -22,7 +23,7 @@ function Orders() {
           <h5>No order Yet</h5>
         ) : (
           order.map((singleOrder) => (
-            <div className="row g-4 ordered-product">
+            <div className="row g-4">
               {/* Product Image */}
               <div className="col-sm-12 col-md-5 col-lg-4 col-xl-3">
                 <img
@@ -36,19 +37,19 @@ function Orders() {
               {/* Product Details */}
               <div className="col-sm-12 col-md-4 col-lg-5 col-xl-6">
                 <div className="card-body">
-                  <h5 className="card-title product--title">
+                  <h5 className="card-title orders--title">
                     {singleOrder.product.Name}
                   </h5>
-                  <p className="card-text product--type">
+                  <p className="card-text orders--type">
                     <small className="text-muted">
                       {singleOrder.product.Type}
                     </small>
                   </p>
-                  <p className="card-text product--description">
+                  <p className="card-text orders--description">
                     100% soy wax sachets perfumed with non-toxic essence Simply
                     hang.
                   </p>
-                  <p className="card-text text-secondary product--price">
+                  <p className="card-text text-secondary orders--price">
                     ₹{singleOrder.product.Price}
                   </p>
                 </div>

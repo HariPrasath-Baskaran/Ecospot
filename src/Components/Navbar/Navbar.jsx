@@ -65,7 +65,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink>
+                  <NavLink to="/cart">
                     <ShoppingCartOutlinedIcon className="text-white" />
                   </NavLink>
                 </li>

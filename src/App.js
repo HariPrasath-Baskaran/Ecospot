@@ -19,6 +19,8 @@ import Whislist from "./Whislist/Whislist";
 import OrderDetailed from "./Pages/OrderDetailedPage/OrderDetailed";
 import BookingSuccess from "./Pages/BookingSuccessful/BookingSuccess";
 import Orders from "./Pages/Orders/Orders";
+import TestingFile from "./TestingFile";
+import CartPage from "./Pages/Cart/Cart";
 
 function App() {
   // const location = useLocation();
@@ -48,6 +50,7 @@ function App() {
         <Route path="orderDetail" element={<OrderDetailed />} />
         <Route path="bookingsuccess" element={<BookingSuccess />} />
         <Route path="orders" element={<Orders />} />
+        <Route path="cart" element={<CartPage />} />
       </Routes>
       <div className="footer-align">
         <Footer />
