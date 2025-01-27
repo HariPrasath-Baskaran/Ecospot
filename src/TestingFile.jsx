@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Accordian from "./Pages/OrderDetailedPage/OrderDetailed";
+import React from "react";
+import CartPage from "./Pages/Cart/Cart";
 
 function TestingFile() {
   // useEffect(() => {
@@ -18,7 +17,7 @@ function TestingFile() {
   // };
   return (
     <div className="contianer mt-5 px-4">
-      <Accordian />
+      <CartPage />
     </div>
   );
 }

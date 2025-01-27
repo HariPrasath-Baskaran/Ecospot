@@ -4,6 +4,7 @@ import "./OrderDetailed.css";
 import { OrderSummary } from "../OrderSummary/OrderSummary";
 import { useLocation, useNavigate } from "react-router-dom";
 import PriceSummary from "./PriceSummary/PriceSummary";
+import axios from "axios";
 
 const OrderDetailed = () => {
   const location = useLocation();
@@ -98,16 +99,50 @@ const OrderDetailed = () => {
   };
 
   const handleSubmitPayment = () => {
+    // product update in orders page
+    const orderData = {
+      product: product,
+      selectedAddress: selectedAddress,
+      paymentMethod: selectedPayment,
+      deliveryDate: deliveryDate,
+    };
+
+    // axios method to update the orders
+    axios
+      .post(
+        "https://679502dfaad755a134eafb70.mockapi.io/Project/orders",
+        orderData
+      )
+      .then((response) => {
+        console.log("Order submitted successfully:", response.data);
+        setTimeout(() => {
+          setOrderConfirmed(true);
+          navigate("/bookingsuccess", {
+            state: {
+              product,
+              deliveryDate,
+              selectedAddress,
+            },
+          });
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error("Error submitting order:", error);
+      });
     // Simulate order confirmation
     // setShowModal(true);
-    setTimeout(() => {
-      // setShowModal(false);
-      setOrderConfirmed(true); // Set the order as confirmed
-      navigate(`/bookingsuccess`, {
-        state: { product: product, deliveryDate: deliveryDate },
-      });
-      // alert("Order Confirmed!");
-    }, 2000); // Hide modal after 3 seconds
+    // setTimeout(() => {
+    //   // setShowModal(false);
+    //   setOrderConfirmed(true); // Set the order as confirmed
+    //   navigate(`/bookingsuccess`, {
+    //     state: {
+    //       product: product,
+    //       deliveryDate: deliveryDate,
+    //       selectedAddress: selectedAddress,
+    //     },
+    //   });
+    //   // alert("Order Confirmed!");
+    // }, 2000); // Hide modal after 3 seconds
   };
 
   return (

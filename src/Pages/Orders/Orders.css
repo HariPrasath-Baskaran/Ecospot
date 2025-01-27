@@ -1,27 +1,27 @@
-.bookingsuccess-container {
+.orders-container {
   text-align: left;
   margin-top: 5.2rem;
 }
 
-.bookingsuccess--heading {
+.orders--heading {
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-.product--title {
+.orders--title {
   font-size: 1.4rem;
   font-weight: 600;
 }
 
-.product--type {
+.orders--type {
   font-size: 1.1rem;
 }
 
-.product--description {
+.orders--description {
   font-size: 1.2rem;
 }
 
-.product--price {
+.orders--price {
   font-size: medium;
   font-weight: 700;
 }

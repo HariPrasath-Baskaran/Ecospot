@@ -55,7 +55,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/Shoppingcart">
+                  <NavLink to="/orders" className="nav-link text-white">
                     <ShoppingBagOutlinedIcon className="text-white me-1 " />
                   </NavLink>
                 </li>
@@ -65,7 +65,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink>
+                  <NavLink to="/cart">
                     <ShoppingCartOutlinedIcon className="text-white" />
                   </NavLink>
                 </li>
