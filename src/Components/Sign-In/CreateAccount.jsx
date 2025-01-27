@@ -154,7 +154,7 @@ const CreateAccount = () => {
   return (
     <div className="container-fluid">
     <div
-      className="d-flex justify-content-center align-items-center md-5  "
+      className="  d-flex justify-content-center align-items-center md-5  "
       style={{  minHeight: "80vh" , minWidth:'100%'}}
     >
       <div className="card m-5 p-5 ">
@@ -242,7 +242,7 @@ const CreateAccount = () => {
                 }`}
               />
               <VisibilityOffOutlinedIcon
-                icon={showPassword.rePassword ? VisibilityOffOutlinedIcon : RemoveRedEyeOutlinedIcon}
+                icon={showPassword.rePassword ? <VisibilityOffOutlinedIcon /> : <RemoveRedEyeOutlinedIcon/>}
                 className="position-absolute"
                 style={{ top: "10px", right: "10px", cursor: "pointer" }}
                 onClick={() => togglePasswordVisibility("rePassword")}
@@ -262,10 +262,10 @@ const CreateAccount = () => {
                 className="form-check-input position-absolute"
               />
               <label
-                className="form-check-label position-relative"
+                className="form-check-label position-relative "
                 style={{ left: "2rem" }}
               >
-                I agree to the terms and conditions
+               I agree to the <a href="#">Terms and conditions</a>
               </label>
               {errors.agreeTerms && (
                 <small className="text-danger d-block">
@@ -277,7 +277,7 @@ const CreateAccount = () => {
 
           {/* Submit Button */}
           <div className="d-grid gap-2 mb-5">
-            <button type="submit" className="btn btn-warning mt-3">
+            <button type="submit" className="btn btn-warning mt-3" >
               REGISTER
             </button>
           </div>

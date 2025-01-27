@@ -29,10 +29,10 @@ function Main() {
           <p>
             let save & hand over to the <span>next generation</span>
           </p>
-          <Button
+          {/* <Button
             label={"Shop now"}
             addOnClasses={"btn-lg btn-primary text-white px-4"}
-          />
+          /> */}
         </div>
       </div>
 

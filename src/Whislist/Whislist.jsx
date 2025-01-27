@@ -7,8 +7,8 @@ const Whislist = () => {
         <div className="col-12">
           <div className="card">
             <div className="card-header d-flex justify-content-between align-items-center">
-              <p className="h2">ShoppingCart</p>
-              <p className="h4 me-5">Price</p>
+              <p className="h2 mt-3 p-3">Wishlist</p>
+              <p className="h3 me-5">Price</p>
             </div>
             <div className="card-body">
               <div className="border-bottom mb-3 p-3">
@@ -33,19 +33,26 @@ const Whislist = () => {
                     </p>
 
                     <div className=" d-flex align-items-center gap-3">
-                      
                       <button className="btn fw-bold text-danger btn-light">
                         Remove
                       </button>
-                      <button className="fw-bold btn btn-light">Add to card</button>
-                      <button className=" fw-bold btn btn-light">Share</button>
+                      <button className="fw-bold btn btn-light">
+                        Add to card
+                      </button>
+                      <button className=" fw-bold btn btn-primary">
+                        Share
+                      </button>
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </div>
+            <p className="col-auto">255.00</p>
           </div>
+      
         </div>
+        
       </div>
     </div>
   );

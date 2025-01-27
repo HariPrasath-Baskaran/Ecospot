@@ -45,12 +45,12 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item me-2">
-                  <NavLink to="/Shoppingcart" className="nav-link text-white">
+                  <NavLink to="product" className="nav-link text-white">
                     About Us
                   </NavLink>
                 </li>
                 <li className="nav-item me-2">
-                  <NavLink to="product" className="nav-link text-white">
+                  <NavLink to="/Contactus" className="nav-link text-white">
                     Contact Us
                   </NavLink>
                 </li>
@@ -59,8 +59,8 @@ function Navbar() {
                     <ShoppingBagOutlinedIcon className="text-white me-1 " />
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink to="/Whislist">
+                <li className="nav-item " data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                  <NavLink to="/Whislist ">
                     <FavoriteBorderOutlinedIcon className="text-white" />
                   </NavLink>
                 </li>
@@ -75,8 +75,8 @@ function Navbar() {
                     Pricing
                   </a>
                 </li>
-                <li className="nav-item ms-2 d-none d-md-inline border-none">
-                  <NavLink to="/SignIn" className="btn  btn-sm bg-white">
+                <li className="nav-item ms-2 d-none d-md-inline border-none" >
+                  <NavLink to="/SignIn" className="btn  btn-sm bg-white " >
                     Sign In
                   </NavLink>
                 </li>

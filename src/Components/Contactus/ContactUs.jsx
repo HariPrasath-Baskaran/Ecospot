@@ -125,7 +125,7 @@ const ContactUs = () => {
               <div className="col-md-4 m-0 p-0  d-flex align-items-strech">
                 <div
                   className="card h-100 shadow-lg p-4 text-white"
-                  style={{ backgroundColor: "#6c9f3d", borderRadius: "0px" }}
+                  style={{ backgroundColor: "#6c9f3d", borderRadius: "0" }}
                 >
                   <h2 className="mb-5">Contact Information</h2>
                   <p>
