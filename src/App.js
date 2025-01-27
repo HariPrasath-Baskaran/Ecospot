@@ -27,7 +27,7 @@ function App() {
   // const hideLocation = ["/Lamp"];
 
   return (
-    <div className="App footer">
+    <div className="App footer content">
       {/* {hideLocation.includes(location.pathname) ? "" : <SubNavigation />} */}
       <Navbar />
       <SubNavigation />
@@ -37,7 +37,6 @@ function App() {
         <Route path="AirFreshener/:id" element={<ProductDescription />} />
         <Route path="Lamp" element={<Lamp />} />
         <Route path="Lamp/:id" element={<ProductDescription />} />
-
         <Route path="Mirror" element={<Mirror />} />
         <Route path="Mirror/:id" element={<ProductDescription />} />
         <Route path="*" element={<NoMatch />} />
@@ -52,7 +51,7 @@ function App() {
         <Route path="orders" element={<Orders />} />
         <Route path="cart" element={<CartPage />} />
       </Routes>
-      <div className="footer-align">
+      <div className="footer-align ">
         <Footer />
       </div>
 

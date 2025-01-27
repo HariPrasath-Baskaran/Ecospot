@@ -11,7 +11,9 @@ const OrderDetailed = () => {
   const navigate = useNavigate();
 
   const { product } = location.state || {};
-  console.log("loc:====", product);
+  // console.log("loc:====", product);
+  const productArray = Array.isArray(product) ? product : [product];
+  console.log("testing array:", productArray);
   const [activeStep, setActiveStep] = useState(1);
   const [visitedSteps, setVisitedSteps] = useState(new Set([1]));
   const [addresses, setAddresses] = useState([
@@ -101,12 +103,13 @@ const OrderDetailed = () => {
   const handleSubmitPayment = () => {
     // product update in orders page
     const orderData = {
-      product: product,
+      product: productArray,
       selectedAddress: selectedAddress,
       paymentMethod: selectedPayment,
       deliveryDate: deliveryDate,
     };
 
+    console.log("orderData-----", orderData);
     // axios method to update the orders
     axios
       .post(
@@ -119,7 +122,7 @@ const OrderDetailed = () => {
           setOrderConfirmed(true);
           navigate("/bookingsuccess", {
             state: {
-              product,
+              productArray,
               deliveryDate,
               selectedAddress,
             },
@@ -383,7 +386,7 @@ const OrderDetailed = () => {
               >
                 <div className="accordion-body">
                   <OrderSummary
-                    product={product}
+                    product={productArray}
                     onConfirm={() => handleStepComplete(2)}
                     deliveryDate={deliveryDate}
                   />
@@ -512,7 +515,7 @@ const OrderDetailed = () => {
         </div>
 
         <div className="col-12 col-lg-3">
-          <PriceSummary product={product} />
+          <PriceSummary product={productArray} />
         </div>
       </div>
     </div>
