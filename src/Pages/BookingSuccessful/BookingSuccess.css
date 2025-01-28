@@ -34,3 +34,12 @@
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
+
+.horizontal-line {
+  border-bottom: 0.1rem solid #3636365b;
+  margin-bottom: 2.5rem;
+}
+
+.horizontal-line:last-child {
+  border-bottom: none;
+}

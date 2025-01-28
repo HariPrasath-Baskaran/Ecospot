@@ -7,6 +7,7 @@ import {
 } from "../../Utils/Icons";
 import { useNavigate } from "react-router-dom";
 import Loader from "../Loader/Loader";
+import axios from "axios";
 
 function ProductContainer({ coverImage, url }) {
   const [data, setData] = useState([]);
@@ -18,7 +19,7 @@ function ProductContainer({ coverImage, url }) {
     fetch(`${url}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        console.log("productcont", data);
         setData(data);
       })
       .catch((err) => console.error(err))
@@ -34,6 +35,23 @@ function ProductContainer({ coverImage, url }) {
     navigate(`/${pathName}/${id}`, {
       state: { url: url, data: data[id] },
     });
+  };
+
+  const clickCartHandler = (id) => {
+    const productData = data.find((item) => item.id === id);
+    console.log("productData----,", productData);
+
+    axios
+      .post(
+        "https://679502dfaad755a134eafb70.mockapi.io/Project/cart",
+        productData
+      )
+      .then((response) => {
+        console.log("Order submitted successfully:", response.data);
+      })
+      .catch((error) => {
+        console.error("Error in adding cart:", error);
+      });
   };
 
   return (
@@ -100,7 +118,10 @@ function ProductContainer({ coverImage, url }) {
                     </div>
                   </div>
                   {productData.Stock ? (
-                    <button className="btn btn-primary custom-button text-white">
+                    <button
+                      className="btn btn-primary custom-button text-white"
+                      onClick={() => clickCartHandler(productData.id)}
+                    >
                       add to cart
                     </button>
                   ) : (

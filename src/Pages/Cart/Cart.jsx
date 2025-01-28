@@ -14,7 +14,11 @@ const CartPage = () => {
   useEffect(() => {
     axios
       .get(`https://679502dfaad755a134eafb70.mockapi.io/Project/cart`)
-      .then((res) => setProducts(res.data))
+
+      .then((res) => {
+        setProducts(res.data);
+        console.log("carpage===", res.data);
+      })
       .catch((err) => {
         console.error("Error in fetching cart data", err);
         setError("Failed to load cart. Please try again.");
