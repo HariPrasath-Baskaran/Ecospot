@@ -8,7 +8,6 @@ function Orders() {
     axios
       .get(`https://679502dfaad755a134eafb70.mockapi.io/Project/orders`)
       .then((res) => {
-        console.log("res", res.data);
         setOrder(res.data);
       })
       .catch((err) => console.log(err));

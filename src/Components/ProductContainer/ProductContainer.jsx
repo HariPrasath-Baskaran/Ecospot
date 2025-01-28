@@ -19,7 +19,6 @@ function ProductContainer({ coverImage, url }) {
     fetch(`${url}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log("productcont", data);
         setData(data);
       })
       .catch((err) => console.error(err))
@@ -27,10 +26,7 @@ function ProductContainer({ coverImage, url }) {
   }, [url]);
 
   const handleProductClick = (id, imgPath) => {
-    // console.log(url);
-    // console.log(imgPath);
     const pathName = imgPath.slice(17, -13);
-    // console.log("pathName", pathName);
 
     navigate(`/${pathName}/${id}`, {
       state: { url: url, data: data[id] },
@@ -39,7 +35,6 @@ function ProductContainer({ coverImage, url }) {
 
   const clickCartHandler = (id) => {
     const productData = data.find((item) => item.id === id);
-    console.log("productData----,", productData);
 
     axios
       .post(
@@ -79,7 +74,7 @@ function ProductContainer({ coverImage, url }) {
                     // className="mb-2"
                     onClick={() => {
                       handleProductClick(productData.id, productData.imgPath);
-                      // console.log(productData.id);
+               
                     }}
                   >
                     {/* <p className="card-text"> */}

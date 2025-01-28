@@ -2,7 +2,6 @@ import Button from "../../Components/Buttons/Button";
 import "./OrderSummary.css";
 
 export const OrderSummary = ({ product, onConfirm, deliveryDate }) => {
-  console.log("ordersumarypage===", product);
   return (
     <div className="order-summary">
       {product.map((product) => (

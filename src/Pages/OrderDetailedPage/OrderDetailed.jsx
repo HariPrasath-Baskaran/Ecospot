@@ -11,9 +11,7 @@ const OrderDetailed = () => {
   const navigate = useNavigate();
 
   const { product } = location.state || {};
-  // console.log("loc:====", product);
   const productArray = Array.isArray(product) ? product : [product];
-  console.log("testing array:", productArray);
   const [activeStep, setActiveStep] = useState(1);
   const [visitedSteps, setVisitedSteps] = useState(new Set([1]));
   const [addresses, setAddresses] = useState([
@@ -109,7 +107,6 @@ const OrderDetailed = () => {
       deliveryDate: deliveryDate,
     };
 
-    console.log("orderData-----", orderData);
     // axios method to update the orders
     axios
       .post(
@@ -132,20 +129,6 @@ const OrderDetailed = () => {
       .catch((error) => {
         console.error("Error submitting order:", error);
       });
-    // Simulate order confirmation
-    // setShowModal(true);
-    // setTimeout(() => {
-    //   // setShowModal(false);
-    //   setOrderConfirmed(true); // Set the order as confirmed
-    //   navigate(`/bookingsuccess`, {
-    //     state: {
-    //       product: product,
-    //       deliveryDate: deliveryDate,
-    //       selectedAddress: selectedAddress,
-    //     },
-    //   });
-    //   // alert("Order Confirmed!");
-    // }, 2000); // Hide modal after 3 seconds
   };
 
   return (
