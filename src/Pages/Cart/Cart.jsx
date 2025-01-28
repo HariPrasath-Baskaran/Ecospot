@@ -11,13 +11,12 @@ const CartPage = () => {
 
   const navigate = useNavigate(); // For navigation
 
+  // Fetch products on component mount
   useEffect(() => {
     axios
       .get(`https://679502dfaad755a134eafb70.mockapi.io/Project/cart`)
-
       .then((res) => {
         setProducts(res.data);
-        console.log("carpage===", res.data);
       })
       .catch((err) => {
         console.error("Error in fetching cart data", err);
@@ -25,6 +24,7 @@ const CartPage = () => {
       });
   }, []);
 
+  // Toggle product selection
   const toggleSelection = (product) => {
     if (!product.Stock) return;
 
@@ -36,14 +36,29 @@ const CartPage = () => {
     });
   };
 
+  // Calculate total price of selected products
   const calculateTotal = () =>
     selectedProducts.reduce((total, product) => total + product.Price, 0);
 
+  // Check if any selected product is out of stock
   const hasOutOfStockSelected = selectedProducts.some((selected) => {
     const product = products.find((p) => p.id === selected.id);
     return product && !product.Stock;
   });
 
+  // Delete a product from the cart
+  const deleteHandler = (id) => {
+    axios
+      .delete(`https://679502dfaad755a134eafb70.mockapi.io/Project/cart/${id}`)
+      .then(() => {
+        setProducts((prev) => prev.filter((item) => item.id !== id));
+      })
+      .catch((error) => {
+        console.error("Error in deleting product:", error);
+      });
+  };
+
+  // Handle checkout
   const handleCheckout = () => {
     navigate("/orderDetail", { state: { product: selectedProducts } });
   };
@@ -109,7 +124,10 @@ const CartPage = () => {
                     <p className="h6 text-end cart--price text-secondary">
                       ₹{product.Price}.00
                     </p>
-                    <button className="cart--delete-btn">
+                    <button
+                      className="cart--delete-btn"
+                      onClick={() => deleteHandler(product.id)}
+                    >
                       <DeleteForeverOutlinedIcon className="icon--size" />
                     </button>
                   </div>

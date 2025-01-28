@@ -7,8 +7,6 @@ const BookingSuccess = () => {
   const location = useLocation();
   const { productArray, deliveryDate, selectedAddress } = location.state || {};
 
-  console.log("bookingsuccess", productArray);
-
   return (
     <div className="container bookingsuccess-container">
       <div className="alert alert-success bookingsuccess--heading" role="alert">

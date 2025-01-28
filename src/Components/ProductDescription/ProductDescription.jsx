@@ -9,14 +9,10 @@ import axios from "axios";
 function ProductDescription() {
   const location = useLocation();
   const navigate = useNavigate();
-
-  // console.log("loca;", location);
   const { url } = location.state || {};
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(false);
-
-  // console.log("data====", data);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -52,8 +48,6 @@ function ProductDescription() {
   };
 
   const cartHandler = () => {
-    // console.log("add to cart button clicked");
-
     axios
       .post("https://679502dfaad755a134eafb70.mockapi.io/Project/cart", product)
       .then((response) => {
