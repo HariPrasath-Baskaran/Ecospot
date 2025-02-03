@@ -15,7 +15,12 @@ function TestingFile() {
   //   navigate(`/airfreshener/${id}`);
   // };
 
-  return <div className="contianer mt-5 px-4">Test</div>;
+  return (
+    <div className="contianer mt-5 px-4">
+      {/* <Wishlist /> */}
+      {/* <LeavesLoader /> */}
+    </div>
+  );
 }
 
 export default TestingFile;

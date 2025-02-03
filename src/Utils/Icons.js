@@ -19,6 +19,7 @@ import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
 import DeleteForeverOutlinedIcon from "@mui/icons-material/DeleteForeverOutlined";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export {
   ShoppingCartOutlinedIcon,
@@ -41,4 +42,5 @@ export {
   MailOutlineOutlinedIcon,
   VisibilityOffOutlinedIcon,
   DeleteForeverOutlinedIcon,
+  FavoriteIcon,
 };

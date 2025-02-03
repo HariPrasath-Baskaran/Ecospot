@@ -21,6 +21,7 @@ import BookingSuccess from "./Pages/BookingSuccessful/BookingSuccess";
 import Orders from "./Pages/Orders/Orders";
 import TestingFile from "./TestingFile";
 import CartPage from "./Pages/Cart/Cart";
+import Wishlist from "./Pages/WishList/WishList";
 
 function App() {
   // const location = useLocation();
@@ -50,6 +51,8 @@ function App() {
         <Route path="bookingsuccess" element={<BookingSuccess />} />
         <Route path="orders" element={<Orders />} />
         <Route path="cart" element={<CartPage />} />
+        <Route path="test" element={<TestingFile />} />
+        <Route path="wishlist" element={<Wishlist />} />
       </Routes>
       <div className="footer-align ">
         <Footer />

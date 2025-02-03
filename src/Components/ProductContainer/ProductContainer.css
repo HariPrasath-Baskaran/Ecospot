@@ -11,17 +11,19 @@
   text-transform: uppercase !important;
 }
 
-.product--icon {
+.productIcon {
   font-size: 2.2rem !important;
 }
 
-.product--icon.wishlist {
+.wishlist {
   float: right;
   margin-bottom: 0.5rem;
 }
+
 .product--type {
   font-size: 1.2rem;
 }
+
 .product--rating {
   font-size: 1.3rem;
 }
